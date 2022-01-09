@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+}
+
+button{
+    background-color: rebeccapurple;
+    border: none;
+    border-radius: 0.3rem;
+    color:black;
+    position: fixed;
+    font-size: 1rem;
+    top: 10px;
+    right: 10px;
+    padding: 0.5rem;
+    transition: transform 0.3s ease-in-out;
+}
+button.active{
+    transition: transform 0.3s ease-in-out;
+    transform:translateX(-195px);
+}
+
+nav{
+    background-color: rebeccapurple;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    padding: 2rem;
+    transform: translateX(100%) ;
+    transition: transform 0.3s ease-in-out;
+
+}
+nav.active{
+    transform: translateX(20%);
+}
+nav ul{
+
+    padding: 0;
+    list-style-type: none;
+    margin: 0;
+}
+
+nav ul li{
+    padding: 1rem 0;
+}
+
+nav a{
+    color: black;
+    text-decoration: none;
+}
+
+.contacts{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contacts .cItems{
+    width: 50px;
+    height: 50px;
+    background: rebeccapurple;    
+    align-items: center;
+    position: relative;
+}
+
+.fa-instagram{
+    color: #bb1f99;
+}
+.fa-linkedin{
+    color: #0069f3;
+}
+.fa-twitter{
+    color: #1da1f2;
+}
