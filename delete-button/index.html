@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/0d0ef11cbe.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="script.js" defer></script>
+
+    <title>Delete Button</title>
+
+</head>
+<body>
+    <div id="container" class="container">
+        <i id="allclose" class="fas fa-times" onclick="closeCont()"></i>
+        <h3>Are you sure?</h3>
+        <p class="sub-heading">This is going to be permanently delete, </p><br>
+
+        <div class="warning">
+        <i class="fas fa-exclamation-triangle"></i>
+        <p class="warning-text">By deleting this item, you can't restore it later! </p>
+        </div>
+
+        <button class="cancel" onclick="closeCont ()">Cancel</button>
+        <button class="yes-delete">Yes, Delete</button> 
+    </div>
+
+    <button class="delete-btn" id="delete">
+        <i class="far fa-trash-alt"></i>Delete</button>
+</body>
+</html>
